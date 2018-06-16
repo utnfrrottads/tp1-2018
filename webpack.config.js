@@ -1,5 +1,6 @@
+/* eslint indent: off */
+
 const path = require('path');
-const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -97,7 +98,7 @@ const config = {
         // cleaning up only 'dist' folder
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-          template: 'index.html'
+            template: 'index.html'
         }),
         // extract-text-webpack-plugin instance
         extractPlugin,

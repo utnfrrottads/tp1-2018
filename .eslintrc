@@ -16,8 +16,8 @@
     }
   },
   "rules": {
-    "arrow-body-style": "error",
-    "arrow-parens": "error",
+    "arrow-body-style": ["error", "always"],
+    "arrow-parens": ["error", "always"],
     "arrow-spacing": "error",
     "eqeqeq": "error",
     "generator-star-spacing": "error",
@@ -36,8 +36,10 @@
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-indent": ["error", 4],
+    "react/prefer-stateless-function": "off",
     "rest-spread-spacing": "error",
     "semi": "error",
     "template-curly-spacing": "error",
