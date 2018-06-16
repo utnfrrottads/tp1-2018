@@ -11,18 +11,18 @@ class TeamsContainer extends React.Component {
     constructor(props) {
         super(props);
 
-        this.props.actions.testAction();
+        this.props.actions.getTeams();
     }
 
     render() {
+        console.log(this.props.worldCup);
         return <Teams />;
     }
 }
 
 const mapStateToProps = (state) => {
     return {
-        project: state.project,
-        table: state.table
+        worldCup: state.worldCup
     };
 };
 
@@ -33,7 +33,8 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 TeamsContainer.propTypes = {
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    worldCup: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TeamsContainer);

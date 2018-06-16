@@ -1,8 +1,23 @@
-export const TEST_ACTION = 'TEST_ACTION';
+import api from '../services/api';
 
-export const testAction = (params) => {
+export const SET_TEAMS = 'SET_TEAMS';
+
+export const setTeams = (data) => {
     return {
-        type: TEST_ACTION,
-        payload: params
+        type: SET_TEAMS,
+        data
     };
 };
+
+export function getTeams() {
+    return (dispatch) => {
+        api.getTeams()
+            .then((response) => {
+                const { teams } = response.data;
+                dispatch(setTeams(teams));
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+}

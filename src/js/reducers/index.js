@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import TestReducer from './test-reducer';
+import worldCupReducer from './reducer';
 
 /*
  * We combine all reducers into a single object before updated data is dispatched (sent) to store
@@ -7,7 +7,7 @@ import TestReducer from './test-reducer';
  * */
 
 const allReducers = combineReducers({
-    testReducer: TestReducer
+    worldCup: worldCupReducer
 });
 
 export default allReducers;

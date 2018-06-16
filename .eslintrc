@@ -23,6 +23,7 @@
     "generator-star-spacing": "error",
     "import/no-extraneous-dependencies": "warn",
     "indent": ["error", 4],
+    "no-console": "warn",
     "no-duplicate-imports": "error",
     "no-eq-null": "error",
     "no-undefined": "error",
