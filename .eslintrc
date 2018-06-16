@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "extends": ["airbnb", "eslint", "eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": "error",
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "eqeqeq": "error",
+    "generator-star-spacing": "error",
+    "import/no-extraneous-dependencies": "warn",
+    "indent": ["error", 4],
+    "no-duplicate-imports": "error",
+    "no-eq-null": "error",
+    "no-undefined": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": ["error", 4],
+    "rest-spread-spacing": "error",
+    "semi": "error",
+    "template-curly-spacing": "error",
+    "yield-star-spacing": "error"
+  }
+}
