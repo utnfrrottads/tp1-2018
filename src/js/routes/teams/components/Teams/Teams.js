@@ -10,7 +10,7 @@ class Teams extends React.Component {
 
     renderTeams() {
         return this.props.teams.map((team) => {
-            return <Team team={team} />;
+            return <Team team={team} key={team.code} />;
         });
     }
 

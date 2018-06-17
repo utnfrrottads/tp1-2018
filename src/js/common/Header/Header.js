@@ -7,7 +7,7 @@ class Header extends React.Component {
     render() {
         return (
             <header className="header">
-                <h1>Fabra - React Boilerplate</h1>
+                <h1>Trabajo Práctico Frontend TTADS 2018 - Mundial Rusia 2018</h1>
             </header>
         );
     }

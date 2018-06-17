@@ -21,7 +21,8 @@ const config = {
     output: {
         // absolute path declaration
         path: path.resolve(__dirname, 'dist'),
-        filename: './assets/js/[name].bundle.js'
+        filename: './assets/js/[name].bundle.js',
+        publicPath: '/'
     },
 
     module: {
@@ -113,7 +114,9 @@ const config = {
         // open app in localhost:3000
         port: 3000,
         stats: 'minimal',
-        open: true
+        open: true,
+        // router fallback
+        historyApiFallback: true
     },
 
     devtool: 'inline-source-map'

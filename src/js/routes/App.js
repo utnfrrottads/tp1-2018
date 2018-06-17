@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../common/Header/Header';
-import TeamsContainer from '../routes/teams/containers/TeamsContainer';
+import Router from './Router';
 
 require('../../scss/style.scss');
 
@@ -11,7 +11,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                <TeamsContainer />
+                <Router />
             </div>
         );
     }

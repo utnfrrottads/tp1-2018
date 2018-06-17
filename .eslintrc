@@ -21,6 +21,7 @@
     "arrow-spacing": "error",
     "eqeqeq": "error",
     "generator-star-spacing": "error",
+    "jsx-a11y/anchor-is-valid": "off",
     "import/no-extraneous-dependencies": "warn",
     "indent": ["error", 4],
     "no-console": "warn",
