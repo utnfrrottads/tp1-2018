@@ -15,8 +15,7 @@ class TeamsContainer extends React.Component {
     }
 
     render() {
-        console.log(this.props.worldCup);
-        return <Teams />;
+        return  <Teams teams={this.props.worldCup.teams} />;
     }
 }
 
