@@ -15,9 +15,7 @@ class GroupsContainer extends React.Component {
     }
 
     render() {
-        console.log("GRUPOS:");
-        console.log(this.props.worldCup);
-        return  <Groups groups={this.props.worldCup.groups} />;
+        return  <Groups groups={this.props.worldCup.groups} />;        
     }
 }
 

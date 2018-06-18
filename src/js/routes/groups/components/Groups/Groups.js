@@ -16,9 +16,9 @@ class Groups extends React.Component {
 
     render() {
         return (
-            <ul >
+            <div className="groups" >
                 {this.renderGroups()}
-            </ul>
+            </div>
         );
     }
 
