@@ -4,4 +4,5 @@ axios.defaults.baseURL = 'https://raw.githubusercontent.com/sanchezjuanmanuel93/
 
 export default class {
     static getTeams() { return axios.get('/worldcup.teams.json'); }
+    static getGroups() { return axios.get('/worldcup.groups.json'); }
 }

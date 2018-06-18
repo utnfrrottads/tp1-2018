@@ -2,7 +2,8 @@
 import * as types from '../actions/actions';
 
 const INITIAL_STATE = {
-    teams: []
+    teams: [],
+    groups: []
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -11,6 +12,9 @@ export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case types.SET_TEAMS:
             newState.teams = action.data;
+            break;
+        case types.SET_GROUPS:
+            newState.groups = action.data;
             break;
     }
 
