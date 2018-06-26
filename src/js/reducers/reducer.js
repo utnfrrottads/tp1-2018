@@ -3,7 +3,8 @@ import * as types from '../actions/actions';
 
 const INITIAL_STATE = {
     teams: [],
-    groups: []
+    groups: [],
+    rounds: []
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -15,6 +16,9 @@ export default function (state = INITIAL_STATE, action) {
             break;
         case types.SET_GROUPS:
             newState.groups = action.data;
+            break;
+        case types.SET_ROUNDS:
+            newState.rounds = action.data;
             break;
     }
 
