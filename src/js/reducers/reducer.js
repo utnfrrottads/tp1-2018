@@ -14,9 +14,11 @@ export default function (state = INITIAL_STATE, action) {
         case types.SET_TEAMS:
             newState.teams = action.data;
             break;
+
         case types.SET_GROUPS:
             newState.groups = action.data;
             break;
+
         case types.SET_ROUNDS:
             newState.rounds = action.data;
             break;
