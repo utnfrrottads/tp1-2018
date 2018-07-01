@@ -28,11 +28,13 @@ class MatchDetailsContainer extends React.Component {
             const matchId = _.toInteger(this.props.match.params.matchId);
             let match;
 
-            if (!match) {
-                rounds.forEach((round) => {
-                    match = _.find(round.matches, { num: matchId }) || match;
-                });
-            }
+            rounds.forEach((round) => {
+                //try to find the match if it hasnt been found yet in a previous round object
+                if (!match) {
+                    //search inside the round.matches array for num === params.matchID
+                    match = _.find(round.matches, { num: matchId });
+                }
+            });
 
             this.setState({match});
         }
