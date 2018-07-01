@@ -24,18 +24,20 @@ class MatchDetailsContainer extends React.Component {
             rounds
         } = this.props.worldCup;
 
+        // if there are rounds inside the store and the match is null
         if (!_.isEmpty(rounds) && !this.state.match) {
             const matchId = _.toInteger(this.props.match.params.matchId);
             let match;
 
             rounds.forEach((round) => {
-                //try to find the match if it hasnt been found yet in a previous round object
+                // try to find the match if it hasnt been found yet in a previous round object
                 if (!match) {
-                    //search inside the round.matches array for num === params.matchID
+                    // search inside the round.matches array for num === params.matchID
                     match = _.find(round.matches, { num: matchId });
                 }
             });
 
+            // save the match to render it
             this.setState({match});
         }
     }
