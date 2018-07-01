@@ -9,9 +9,14 @@ class Rounds extends React.Component {
 
     renderMatches() {
         return this.props.rounds.map((matchday) => {
-            return matchday.matches.map((match) => {
-                return <Match key={match.num} match={match} />;
-            });
+            return (
+                <div key={matchday.name.toString()} className='matchday'>
+                    <h4>{matchday.name}</h4>
+                    {matchday.matches.map((match) => {
+                        return <Match match={match} key={match.num} />;
+                    })}
+                </div>
+            );
         });
     }
 
