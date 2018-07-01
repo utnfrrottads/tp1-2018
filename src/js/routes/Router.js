@@ -11,6 +11,7 @@ class Router extends React.Component {
             <Switch>
                 <Route exact path='/teams' component={TeamsContainer} />
                 <Route exact path='/groups' component={GroupsContainer} />
+                <Route exact path='/' component={RoundsContainer} />
                 <Route exact path='/rounds' component={RoundsContainer} />
             </Switch>
         );

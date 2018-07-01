@@ -1,21 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Match from './Match/Match';
+
 require('./Rounds.scss');
 
 class Rounds extends React.Component {
 
     renderMatches() {
-        return this.props.rounds.map((round) => {
-            return <li key={round.name}>{round.name}</li>;
+        return this.props.rounds.map((matchday) => {
+            return matchday.matches.map((match) => {
+                return <Match key={match.num} match={match} />;
+            });
         });
     }
 
     render() {
         return (
-            <ul className="rounds">
+            <div className="rounds">
                 {this.renderMatches()}
-            </ul>
+            </div>
         );
     }
 
