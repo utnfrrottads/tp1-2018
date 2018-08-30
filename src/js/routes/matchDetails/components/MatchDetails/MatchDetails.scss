@@ -1,0 +1,15 @@
+.teams {
+    color: red;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.match-details div {
+    margin: 5px;
+}

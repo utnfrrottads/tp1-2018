@@ -1,0 +1,16 @@
+.rounds {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.matchday {
+    width: 300px;
+    border: solid 1px #000;
+    margin: 5px;
+}

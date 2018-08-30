@@ -1,0 +1,8 @@
+{
+  "presets": [
+      "env",
+      "latest",
+      "react",
+      "stage-1"
+]
+}

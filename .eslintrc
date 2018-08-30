@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "extends": ["airbnb", "eslint", "eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": ["error", "always"],
+    "arrow-parens": ["error", "always"],
+    "arrow-spacing": "error",
+    "eqeqeq": "error",
+    "generator-star-spacing": "error",
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/no-extraneous-dependencies": "warn",
+    "indent": ["error", 4],
+    "no-console": "warn",
+    "no-duplicate-imports": "error",
+    "no-eq-null": "error",
+    "no-undefined": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": ["error", 4],
+    "react/no-did-update-set-state": "off",
+    "react/prefer-stateless-function": "off",
+    "rest-spread-spacing": "error",
+    "semi": "error",
+    "template-curly-spacing": "error",
+    "yield-star-spacing": "error"
+  }
+}
