@@ -5,24 +5,35 @@ require('./MatchDetails.scss');
 
 class MatchDetails extends React.Component {
 
-    renderGoalPlayerName(goals) {
-        return goals.map((g1) => { return g1.name; });
+    renderGoalTeam(goals) {
+        return goals.map((goal) => {
+            return (
+                <div className='goals' key={goal.name.toString()}>
+                    <span><b>{goal.name}</b> {goal.minute}&apos; {goal.offset ? `+${goal.offset}` : ''}  </span>
+                </div>
+            );
+        });
     }
 
     render() {
         const {
             num,
             goals1,
-            goals2
+            goals2,
+            team1,
+            team2,
         } = this.props.match;
+        console.log(this.props.match);
 
         return (
             <div className="match-details" key={num}>
                 <div>
-                    {this.renderGoalPlayerName(goals1)}
+                    <h2>{team1.name}({goals1.length})</h2>
+                    {this.renderGoalTeam(goals1)}
                 </div>
                 <div>
-                    {this.renderGoalPlayerName(goals2)}
+                    <h2>{team2.name}({goals2.length})</h2>
+                    {this.renderGoalTeam(goals2)}
                 </div>
             </div>
         );
